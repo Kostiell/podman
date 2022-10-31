@@ -128,26 +128,26 @@ Given
 
 When участники *именуют сценарии*, выполняют команды и анализируют их вывод и поведение
 ----
-- Сценарий "Как ...?"
+- Сценарий "Как проверить что podman установлен и среду?"
 ```shell
 podman version # TODO: собственные пометки участников для будущего использования в проектах
 podman system info
 podman system df
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как пройти аутентификацию?"
 ```shell
 podman logout
 podman login {{ registry-host }}
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как стянуть image себе?"
 ```shell
 podman image pull artifactory.raiffeisen.ru/ext-rbru-osimage-docker/alpine:3.14  -- тянем себе
 podman system df
 ````
 
-- Сценарий "Как ...?"
+- Сценарий "Как запустить контейнер?"
 ```shell
 sudo podman container run artifactory.raiffeisen.ru/container-training-docker/hello-world:latest -- запуск контейнера
 
@@ -156,7 +156,7 @@ sudo podman container run --name demo -it alpine:3.14         -- запуск с
 /# exit  -- команды внутри
 ```
 
-- Сценарий "Как ...?"
+- Сценарий "Как удалить контейнер?"
 ```shell
 podman container ls [--all]   -- посмотреть контейнеры
 podman container rm demo      -- удалить
