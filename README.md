@@ -14,7 +14,7 @@ Prerequisites
 - vra8: `IT Academy Training Group`, HDD 50Gb, OS AlmaLinux + local ssh client
 - local virtual machine + local ssh client
 - [ ] Доступен git repo с данным руководством {{ git-repo }} `https://github.com/eugene-krivosheyev/podman`
-- [ ] Доступен {{ registry-host }}
+- [ ] Доступен artifactory.raiffeisen.ru
 - [ ] Доступ учетной записи {{ registry-account }} на {{ registry-host }}
 - [ ] [Установлен Podman и зависимости](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_atomic_host/7/html/managing_containers/finding_running_and_building_containers_with_podman_skopeo_and_buildah)
 ```shell
