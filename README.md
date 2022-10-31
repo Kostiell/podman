@@ -143,23 +143,23 @@ podman login {{ registry-host }}
 
 - Сценарий "Как ...?"
 ```shell
-podman image pull alpine:3.14
+podman image pull artifactory.raiffeisen.ru/ext-rbru-osimage-docker/alpine:3.14  -- тянем себе
 podman system df
 ````
 
 - Сценарий "Как ...?"
 ```shell
-podman container run hello
+sudo podman container run artifactory.raiffeisen.ru/container-training-docker/hello-world:latest -- запуск контейнера
 
-podman container run --name demo -it alpine:3.14
-/# cat /etc/os-release
-/# exit 
+sudo podman container run --name demo -it alpine:3.14         -- запуск с терминала
+/# cat /etc/os-release  -- команды внутри
+/# exit  -- команды внутри
 ```
 
 - Сценарий "Как ...?"
 ```shell
-podman container ls [--all]
-podman container rm demo
+podman container ls [--all]   -- посмотреть контейнеры
+podman container rm demo      -- удалить
 ```
 
 Then участники отвечают на вопросы
